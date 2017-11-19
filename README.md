@@ -1,24 +1,19 @@
+# A Stock Tracker Social Media App
+View a live demo at: https://stock-tracker-linh.herokuapp.com
 
-     ,-----.,--.                  ,--. ,---.   ,--.,------.  ,------.
-    '  .--./|  | ,---. ,--.,--. ,-|  || o   \  |  ||  .-.  \ |  .---'
-    |  |    |  || .-. ||  ||  |' .-. |`..'  |  |  ||  |  \  :|  `--, 
-    '  '--'\|  |' '-' ''  ''  '\ `-' | .'  /   |  ||  '--'  /|  `---.
-     `-----'`--' `---'  `----'  `---'  `--'    `--'`-------' `------'
-    ----------------------------------------------------------------- 
+## Description
+A social media app to keep track of your stocks in your portfolio and add friends and view their portfolios
 
+## Written in Ruby on Rails
+* Ruby version 2.2.3
+* gem stock_quote 1.5.2
+* gem devise
 
-Welcome to your Rails project on Cloud9 IDE!
-
-To get started, just do the following:
-
-1. Run the project with the "Run Project" button in the menu bar on top of the IDE.
-2. Preview your new app by clicking on the URL that appears in the Run panel below (https://HOSTNAME/).
-
-Happy coding!
-The Cloud9 IDE team
-
-
-## Support & Documentation
-
-Visit http://docs.c9.io for support, or to learn more about using Cloud9 IDE. 
-To watch some training videos, visit http://www.youtube.com/user/c9ide
+Include Dockerfile to run the app locally
+- build docker image and run it: 
+```
+git clone https://github.com/linhkikuchi/stock-tracker-social-media.git
+cd stock-tracker-social-media
+docker build -t ruby-app .
+docker run -p 3000:3000 -d ruby-app
+```
