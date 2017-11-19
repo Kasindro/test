@@ -15,3 +15,5 @@
 /log/*
 !/log/.keep
 /tmp
+#ignore cloud9 config
+/.c9
